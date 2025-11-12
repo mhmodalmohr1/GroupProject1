@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Lab Test</title>
+    <style>
+      body {
+        background-color: #f0f8ff;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 100px;
+      }
+      h1 {
+        color: #0047ab;
+      }
+      p {
+        font-size: 18px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Our Cloud Project</h1>
+    <p>This project was made by: <strong>Mahmoud & Hafiz Murayr</strong>.</p>
+    <p>I hope that we did a good work here :)</p>
+  </body>
+</html>
