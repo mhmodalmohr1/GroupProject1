@@ -3,69 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Computing Project</title>
+    <title>Cloud Computing Group Project</title>
     <style>
+        /* General Page Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             text-align: center;
-            background-color: #f9f9f9;
         }
+
+        /* Header Styles */
         header {
             background-color: #004a99;
-            color: #fff;
-            padding: 1.5rem 0;
-            margin-bottom: 2rem;
-            border-radius: 8px;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* Main Container */
         .container {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        img {
-            max-width: 250px;
+
+        /* Image Styles */
+        .project-logo {
+            max-width: 200px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        h1 { margin: 0; font-size: 2.2rem; }
-        h3 { margin-top: 10px; font-weight: normal; opacity: 0.9; }
-        h2 { color: #004a99; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px;}
-        
-        .content-text {
-            text-align: justify;
-            margin-bottom: 20px;
+
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
+            text-align: left;
         }
-        
+        h2 {
+            color: #004a99;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Members List */
+        .members-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #004a99;
+        }
         .members-list {
-            text-align: center;
-            list-style-position: inside;
+            list-style: none;
             padding: 0;
-            display: inline-block;
+            margin: 0;
         }
         .members-list li {
-            margin: 5px 0;
+            padding: 10px 0;
             font-size: 1.1rem;
+            border-bottom: 1px solid #eee;
         }
-        
-        .drive-link {
+        .members-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Drive Button Styles */
+        .btn-drive {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
             background-color: #28a745;
             color: white;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            font-size: 1.1rem;
         }
-        .drive-link:hover {
+        .btn-drive:hover {
             background-color: #218838;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
@@ -73,34 +119,42 @@
 
     <header>
         <h1>Cloud Computing Project</h1>
-        <h3>DMD243 Cloud Computing and Embedded Systems</h3>
+        <p>DMD243 Cloud Computing and Embedded Systems</p>
     </header>
 
     <div class="container">
-        <img src="logo.png" alt="Jazan University Logo">
+        <img src="logo.jpg" alt="Jazan University Logo" class="project-logo">
 
         <section>
             <h2>What is Cloud Computing?</h2>
-            <div class="content-text">
-                <p>
-                    Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale.
-                </p>
-                <p>
-                    Instead of buying, owning, and maintaining physical data centers and servers, organizations can access technology services on an as-needed basis from a cloud provider. In this project, we are demonstrating the practical application of these concepts by utilizing cloud storage and hosting services to deploy this web page.
-                </p>
-            </div>
+            <p>
+                Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet ("the cloud"). This offers faster innovation, flexible resources, and economies of scale.
+            </p>
+            <p>
+                In this project, we demonstrate these concepts by utilizing <strong>Cloud Storage</strong> (Google Drive) and <strong>Cloud Hosting</strong> (GitHub Pages) to deploy this website publicly without managing physical servers.
+            </p>
         </section>
 
         <section>
             <h2>Group Members</h2>
-            <ul class="members-list">
-                <li><strong>Mahmou Bader Murayr</strong> (ID: 202508075)</li>
-                <li><strong>Hafiz Bader Murayr</strong> (ID: 202507395)</li>
+            <div class="members-box">
+                <ul class="members-list">
+                    <li>👤 <strong>Mahmou Bader Murayr</strong> - ID: 202508075</li>
+                    <li>👤 <strong>Hafiz Bader Murayr</strong> - ID: 202507395</li>
                 </ul>
+            </div>
         </section>
 
-        <a href="https://drive.google.com/drive/folders/1xJgVNy801jLdtBqt9VaYIkPFcSIRLgeA?usp=drive_link" class="drive-link" target="_blank">View Our Project Files on Google Drive</a>
+        <section style="text-align: center;">
+            <a href="https://drive.google.com/drive/folders/1xJgVNy801jLdtBqt9VaYIkPFcSIRLgeA?usp=drive_link" class="btn-drive" target="_blank">
+                📂 Access Project Files on Google Drive
+            </a>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Cloud Computing Student Project</p>
+    </footer>
 
 </body>
 </html>
